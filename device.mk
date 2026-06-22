@@ -79,6 +79,15 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml
 
+# Prebuilt Apps
+PRODUCT_PACKAGES += \
+    AuroraStore \
+    AuroraServices \
+    Droid-ify \
+    Fossify-File-Manager \
+    Key-Verifier-Blocker \
+    SafetyCore-Blocker
+
 # Radio
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
@@ -113,7 +122,7 @@ PRODUCT_SHIPPING_API_LEVEL := 18
 
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2016-01-01
+    ro.lineage.build.vendor_security_patch=2026-06-05
 
 # Properties
 -include $(DEVICE_PATH)/system_prop.mk
